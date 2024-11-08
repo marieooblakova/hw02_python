@@ -18,7 +18,6 @@ for line in netflix_list:
     netflix_dict['director'] = directors
     actors = line[16].split(', ')
     if actors == ['']:#převedení seznamu s prázdným stringem na prázdný seznam
-        directors = []
         actors = []
     netflix_dict['cast'] = actors 
     netflix_dict['decade'] =int(line[5][:3] + '0')
